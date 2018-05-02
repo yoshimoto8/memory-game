@@ -4,21 +4,30 @@ body {
   font-family: sans-serif;
 }
 
+.game {
+  display: flex;
+  justify-content: center;
+}
+
 .board-row {
+  height: 400px;
+  width: 500px;
   display: flex;
   flex-wrap: wrap;
 }
 
 .card {
-  width: 25%;
-}
-
-.card-front {
+  width: 100px;
+  height: 150px;
   margin: 10px;
-  background-color: black;
 }
 
-.game {
-  display: flex;
-  justify-content: center;
+.card-back {
+  font-size: 100px;
+  text-align: center;
+  margin-top: 20px;
+}
+.card-front {
+  height: 100%;
+  background-color: black;
 }

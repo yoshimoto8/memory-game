@@ -2,7 +2,7 @@ import React from 'react'
 
 const StartBotton = (props) => {
   return (
-      <button onClick={() => props.handleShuffle(props.id)}>
+      <button onClick={() => {props.handleShuffle(props.id); props.startTimer();}}>
         スタート
       </button>
   )
