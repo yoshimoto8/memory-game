@@ -65,7 +65,7 @@ class Game extends React.Component {
 
   setMatched = (firstId, secondId) => {
     const newData = update(this.state.data, {[firstId]: {matched: {$set: true}},
-      [secondId]: {matched: {$set: true}}})
+                                             [secondId]: {matched: {$set: true}}})
     setTimeout(() => (this.setState({data: newData})), 500) 
   }
 
@@ -86,10 +86,10 @@ class Game extends React.Component {
   reset = (firstId, secondId) => {
     const newData = update(this.state.data, {[firstId]: {flipped: {$set: false}},
                                             [secondId]: {flipped: {$set: false}}})
-    setTimeout(() => (this.setState({data: newData})), 1000)
+    setTimeout(() => (this.setState({data: newData})), 500)
   }
 
-  tick() {
+  tick = () => {
     this.setState(prevState => ({
       seconds: prevState.seconds + 1
     }));
