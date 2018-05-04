@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types';
 import Square from '../atoms/Square'
 
 class Borad extends React.Component {
@@ -25,5 +26,11 @@ class Borad extends React.Component {
     )
   }
 }
+
+Borad.propTypes = {
+  squares: PropTypes.array,
+  handleOpenCard: PropTypes.func,
+  data: PropTypes.array
+};
 
 export default Borad

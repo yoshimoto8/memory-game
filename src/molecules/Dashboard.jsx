@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types';
 import Valuate from '../atoms/Valuate'
 import ThoughtTimes from '../atoms/ThoughtTimes'
 import StartBotton from '../atoms/StartBotton'
@@ -21,5 +22,13 @@ class Dashboard extends React.Component {
     )
   }
 }
+
+Dashboard.propTypes = {
+  history: PropTypes.number,
+  id: PropTypes.array,
+  handleShuffle: PropTypes.func,
+  seconds: PropTypes.number,
+  startTimer: PropTypes.number,
+};
 
 export default Dashboard

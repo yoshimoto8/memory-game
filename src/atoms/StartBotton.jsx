@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types';
 
 const StartBotton = (props) => {
   return (
@@ -7,5 +8,10 @@ const StartBotton = (props) => {
       </button>
   )
 }
+
+StartBotton.propTypes = {
+  handleShuffle: PropTypes.func
+}
+
 
 export default StartBotton

@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types';
 
 class Square extends React.Component {
   render() {
@@ -13,5 +14,12 @@ class Square extends React.Component {
     )
   }
 }
+
+Square.propTypes = {
+  data: PropTypes.number,
+  handleOpenCard: PropTypes.func
+}
+
+
 
 export default Square

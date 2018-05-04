@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types';
 
 const DisplayTimer = ({seconds}) => {
   return (
@@ -6,6 +7,10 @@ const DisplayTimer = ({seconds}) => {
       second: {seconds}
     </div>
   )
+}
+
+DisplayTimer.propTypes = {
+  seconds: PropTypes.number
 }
 
 export default DisplayTimer

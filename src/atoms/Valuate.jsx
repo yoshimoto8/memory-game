@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types';
 
 const Valuate = ({history}) => {
   if (history >= 1) {
@@ -20,6 +21,10 @@ const Valuate = ({history}) => {
       </div>
     )
   }
+}
+
+Valuate.propTypes = {
+  history: PropTypes.number
 }
 
 export default Valuate
